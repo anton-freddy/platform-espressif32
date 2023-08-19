@@ -7,6 +7,8 @@
     "boot": "opi",
     "core": "esp32",
     "extra_flags": [
+      "-DARDUINO_RUNNING_CORE=1",
+      "-DARDUINO_EVENT_RUNNING_CORE=1",
       "-DBOARD_HAS_PSRAM",
       "-DARDUINO_ESP32S3_CAM_LCD",
       "-DARDUINO_USB_MODE=1"
@@ -36,9 +38,9 @@
   ],
   "name": "ESP32S3 CAM LCD",
   "upload": {
-    "flash_size": "16MB",
+    "flash_size": "8MB",
     "maximum_ram_size": 327680,
-    "maximum_size": 16777216,
+    "maximum_size": 8388608,
     "require_upload_port": true,
     "speed": 921600
   },
